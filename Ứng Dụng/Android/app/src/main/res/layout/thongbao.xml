@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radius_hopthoai">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="25dp"
+        app:srcCompat="@drawable/ic_thongbao" />
+    <TextView
+        android:layout_below="@id/imageView"
+        android:id="@+id/TV_ThongBao"
+        android:layout_width="253dp"
+        android:layout_height="29dp"
+        android:text="Chọn Số Lượng"
+        android:gravity="center"
+        android:textColor="#3D5AFE"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="45dp"
+        tools:ignore="MissingConstraints"/>
+    <TextView
+        android:layout_below="@id/TV_ThongBao"
+        android:id="@+id/TV_NoiDung"
+        android:layout_width="253dp"
+        android:layout_height="29dp"
+        android:text="Chọn Số Lượng"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="45dp"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/BT_XacNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đồng Ý"
+        android:background="#2979FF"
+        android:shadowRadius="2"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="190dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/TV_NoiDung"/>
+
+
+
+</RelativeLayout>

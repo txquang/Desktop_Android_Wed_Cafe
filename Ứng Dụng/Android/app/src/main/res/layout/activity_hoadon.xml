@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    tools:context=".Activity_HoaDon"
+    android:background="@drawable/gradient_2">
+
+    <TextView
+        android:id="@+id/HD_TV_TenBan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#711515"
+        android:text="Bàn số 01" />
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_below="@id/HD_TV_TenBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="280dp"
+        android:indeterminateDrawable="@drawable/progress"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RC_HD"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="660dp"/>
+
+    <Button
+        android:id="@+id/HD_BT_ThemMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm SP"
+        android:textColor="#ffff"
+        android:background="@drawable/gradient_4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/RC_HD"/>
+    <Button
+        android:id="@+id/HD_BT_TongTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng Tiền: 46.000đ"
+        android:textColor="#FF5252"
+        android:background="#FBFBFB"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@id/RC_HD"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/HD_BT_ThanhToan"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:text="Thanh Toán"
+        android:textColor="#FDFDFD"
+        android:textAllCaps="false"
+        android:layout_below="@id/HD_BT_TongTien"
+        android:background="@drawable/gradient_3"
+        />
+    <Button
+        android:id="@+id/HD_BT_Trolai"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Trở lại"
+        android:layout_below="@id/HD_BT_TongTien"
+        android:background="#FBFBFB"
+        android:layout_marginLeft="320dp"/>
+
+
+
+
+</RelativeLayout>

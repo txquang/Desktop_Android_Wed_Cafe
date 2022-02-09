@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radius_hopthoai">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="253dp"
+        android:layout_height="29dp"
+        android:text="Chọn Số Lượng"
+        android:gravity="center"
+        android:textColor="#3D5AFE"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="45dp"
+        tools:ignore="MissingConstraints"/>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="112dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/textView2"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="10"
+        android:gravity="center"
+        android:textColor="#3D5AFE"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@id/textView2"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy"
+        android:background="#2979FF"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="190dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/seekBar"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đồng Ý"
+        android:background="#2979FF"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="190dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/seekBar"/>
+
+</RelativeLayout>
